@@ -80,11 +80,11 @@ public class ConfigFile extends AbstractConfigFile {
   @ConfigSerializable
   static class ToolXP {
     @Setting(comment = "Base XP used when no more specific entry is present for the tool")
-    public int defaultBaseXP = 500;
+    public int defaultBaseXP = 50;
 
     @Setting(comment = "Base XP for each of the listed tools")
     public Map<Item, Integer> baseXpForTool = new HashMap<>();
 
-    public float levelMultiplier = 2f;
+    public float levelMultiplier = 1f;
   }
 }
